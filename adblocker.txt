@@ -1,0 +1,13 @@
+content-script.js:
+- start blocking ads
+- fix badge logistics
+- block ads, cookies, and trackers
+- filter lists? whitelists? rules? etc..
+
+
+
+background.js/popup.js
+- cross window glitch
+- test for bugs
+- if all tests passed, we can start with content-script.js
+		

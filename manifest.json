@@ -1,0 +1,43 @@
+{
+    "manifest_version": 3,
+    "name": "N.E.P.T.R. v1",
+    "description": "Blocking ads and stuff.",
+    "version": "1.0.0",
+
+
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "scripting",
+        "storage",
+        "webNavigation"
+    ],
+    "host_permissions": [
+        "<all_urls>",
+        "*://*/*"
+    ],
+
+
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_title": "N.E.P.T.R."
+    },
+    "icons": {
+        "16": "popup/Imgs/frog_on.png",
+        "32": "popup/Imgs/frog_on.png",
+        "48": "popup/Imgs/frog_on.png",
+        "128": "popup/Imgs/frog_on.png"
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content-script.js"],
+          "run_at": "document_start"
+        }
+      ]
+      
+}

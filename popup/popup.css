@@ -1,0 +1,61 @@
+body {
+    background-color: #0c0c0c;
+    color: #eeeeee;
+}
+
+
+
+/* main body */
+.content {
+    min-width: 300px;
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+}
+
+
+/* switch toggle */
+.switch {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle {
+    height: 112px;
+    width: 112px;
+    margin-top: 60px;
+    background-image: url('./Imgs/frog_off.png');
+    background-repeat: no-repeat;
+    transition-duration: 0.2s;
+}
+
+#toggle:active {
+    transform: scale(1.2);
+}
+
+
+
+/* bottom part */
+.desc {
+    margin: auto;
+    text-align: center;
+}
+
+#website {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+}
+
+#protection {
+    font-size: medium;
+    color: #cacaca;
+}
